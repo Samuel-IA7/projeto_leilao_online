@@ -1,6 +1,8 @@
 # projeto_leilao_online
 
+### Diagrama C4 - Nível 1: Contexto do Sistema
 
+```mermaid
 C4Context
     title Diagrama de Contexto - Sistema de Gestão de TI e Chamados da Prefeitura
 
@@ -14,7 +16,7 @@ C4Context
     Rel(tecnico, sistema, "Gerencia chamados e inventário", "HTTPS / API")
     Rel(responsavel, sistema, "Consulta equipamentos e emite relatórios", "HTTPS")
 
-    C4Container
+C4Container
     title Diagrama de Containers - Microsserviços e Bancos de Dados
 
     Person(usuario, "Usuários", "Cidadãos, Técnicos e Responsáveis de Setor")
